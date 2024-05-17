@@ -37,6 +37,8 @@ public class SecurityConfig {
                         .hasAnyAuthority("USER")
                         .requestMatchers("/adminuser/**")
                         .hasAnyAuthority("USER", "ADMIN")
+                        .requestMatchers("/gian/meow")
+                        .hasAnyAuthority("USER")
                         .anyRequest().authenticated())
                 .sessionManagement(manager -> manager.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authenticationProvider(authenticationProvider())

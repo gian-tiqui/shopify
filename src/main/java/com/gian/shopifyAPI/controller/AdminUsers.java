@@ -40,4 +40,9 @@ public class AdminUsers {
     public ResponseEntity<Object> adminAndUsersEndpoint() {
         return ResponseEntity.ok("User and Admin api");
     }
+
+    @GetMapping("/gian/meow")
+    public ResponseEntity<Object> gian() {
+        return ResponseEntity.ok("meow");
+    }
 }
