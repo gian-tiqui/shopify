@@ -3,6 +3,7 @@ package com.gian.shopifyAPI.dto;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
+import com.gian.shopifyAPI.entity.Product;
 import lombok.Data;
 
 import java.util.List;
